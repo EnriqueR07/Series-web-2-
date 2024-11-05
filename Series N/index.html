@@ -1,160 +1,116 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src=""></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serie Netflix</title>
+    <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/b38a2b03da.js" crossorigin="anonymous"></script>
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-
-<header>
-    <title>Serie Nexflix </title>
+  
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js"></script>
 </head>
-
 <body>
     <header>
         <div class="logo">
             <button class="desplegable">
                 <span id="hamburger" class="hamburger"></span>
             </button>
-            <img src="./img/logo Nexflix.png" class="logo1">
+            <img src="./img/logo Nexflix.png" class="logo1" alt="Netflix Logo">
         </div>
         <nav id="m" class="menu">
-            <ul class="menu-lista xavi">
-                <li class="menu-item"><a href="#INTRO" target="_blank" class="menu-link">INTRO</a></li>
-                <li class="menu-item"><a href="#TOP SERIES " target="_blank" class="menu-link">TOP SERIES</a></li>
-                <li class="menu-item"><a href="#PON ESTRELLAS" target="_blank" class="menu-link">PON ESTRELLAS</a></li>
-               
+            <ul class="menu-lista serie ">
+                <li class="menu-item"><a href="#INTRO" class="menu-link">INTRO</a></li>
+                <li class="menu-item"><a href="#TOP_SERIES" class="menu-link">TOP SERIES</a></li>
+                <li class="menu-item"><a href="#PON_ESTRELLAS" class="menu-link">PON ESTRELLAS</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="INTRO" class="intro">
-        <h1 class="titol titol-intro"> ¿Cual es realmente la mejor?</h1>
-        <p class="subtitol subtitol-intro">
-           Haz tu propio ranking, danos tu opinion 
-        </p>
-        <img src="./img/palabra nexflix .png" alt="" class="intro-img">
-        <br><br><br>
+        <h1 class="titol titol-intro">¿Cuál es realmente la mejor?</h1>
+        <p class="subtitol subtitol-intro">Haz tu propio ranking, danos tu opinión</p>
+        <img src="./img/palabra nexflix .png" alt="Netflix Word" class="intro-img">
+        <p>"Información sobre la web "</p>
     </section>
 
-    <section id="SERVEIS" class="meusServeis">    
-        <h1 class="titol titol-serveis">Top series </h1>
-             <div class="serveis">
-     
-     
-             </section>
-             <section id="TREBALLS" class="treballs">
-                 <h2 class="titol">Treballs</h2>
-                 <p class="subtitol subtitol-treball">Les meves webs:</p>
-                 <div class="portfoli">
-                     <a href="https://es.wikipedia.org/wiki/The_Walking_Dead_(serie_de_televisi%C3%B3n)" class="portfoli-obj ">
-                         <img src="./img/the walkingdead poster web.jpg" class="portfoli-img">
-                         <h2>The walking dead</h2>
-                     </a>
-         
-         
-                     <a href="https://www.netflix.com/us-es/title/81040344" class="portfoli-obj">
-                         <img src="./img/El_juego_del_calamar_Serie_de_TV-688981365-large.jpg" alt="" class="portfoli-img">
-                         <h3>Juego del Calmar </h3>
-                     </a>
-         
-         
-                     <a href="https://www.netflix.com/es/title/80057281" class="portfoli-obj">
-                         <img src="./img/stranger-things-font..jpg" alt="" class="portfoli-img">
-                         <h4>Stranger things </h4>
-                     </a>
-         
-         
-                     <a href="https://www.netflix.com/es/title/80994082" class="portfoli-obj">
-                         <img src="./img/cartel-lupin-2189837.webp" alt="" class="portfoli-img">
-                         <h5> Lupin </h5>
-                     </a>
-         
-         
-              
-         
-         
-                     <a href="https://open.spotify.com/playlist/04klCPe6rhk7BRCQaJqNq2" class="portfoli-obj">
-                         <img src="./img/Captura de pantalla 2024-09-19 085228.png" alt="" class="portfoli-img"">
-                     </a>
-                
-                     <a href=" https://www.instagram.com/_xxavvi/?next=%2F" class="portfoli-obj">
-                         <img src="./img/Instagram_logo_2022.svg" alt="" class="portfoli-img"">
-                     </a>
-                
-                     <a href=" https://ca.wikipedia.org/wiki/Lionel_Andr%C3%A9s_Messi" class="portfoli-obj">
-                         <img src="./img/lionel-messi-1473415845-6134.jpg" alt="" class="portfoli-img"">
-                     </a>
-                 </div>
-             </section>
-     
-     
-             </div>
-             <a href="#TREBALLS" class="btn">Els Meus Treballs</a>
-         </section>
-         <section id="JO" class="about">
-             <h2 class="titol titol-about">About Me</h2>
-             <p class="subtitol subtitol-about">GANG-GANG</p>
-             <div>
-                 <p>Xavi és un noi de 17 anys de Menorca, conegut pel seu entusiasme i proximitat amb els amics. Estudia
-                     segon de batxillerat i es destaca a les seves classes, sempre disposat a ajudar els altres. La seva
-                     gran passió és el bàsquet, esport que practica gairebé diàriament, gaudint de la companyia i el
-                     treball en equip. També és fan del futbol, en concret del barça. A més, li encanta explorar la
-                     bellesa natural de la seva illa i compartir moments
-                     divertits amb els amics, ja sigui a la platja o veient una bona pel·lícula. El seu amor per la
-                     música també ho distingeix, creant playlists que sempre comparteix. Amb la seva energia contagiosa,
-                     inspira els qui l'envolten a donar el millor de si mateixos.
-                 </p>
-     
-     
-             </div>
-             <img class="about-img" src="./img/3.JPG">
-     
-     </body>
-     <footer class="footer">
-         <a href="mailto:xensenyat19602@iesjoanramis.org" class="link"> GMAIL: xensenyat19602@iesjoanramis.org</a>
-         <ul class="lista">
-             <li class="item-list"> <a href="https://www.instagram.com/" target="_blank" class="link-list">Instagram</a><i class="fa-brands fa-instagram" style="color: #0446b9;"></i></li>
-             <li class="item-list"> <a href="https://github.com/mmaariiaaa" target="_blank" class="link-list">Git Hub</a><i class="fa-brands fa-github" style="color: #0248c0;"></i></li>
-             <li class="item-list"> <a href="https://x.com/i/flow/login" target="_blank" class="link-list">Twitter</a><i class="fa-brands fa-twitter" style="color: #0249c5;"></i></li>
-             <li class="item-list"> <a href="https://www.tiktok.com/upload?lang=es" target="_blank" class="link-list">TikTok</a><i class="fa-brands fa-tiktok" style="color: #024bca;"></i></li>
-         </ul>
-     </footer>
-     <script>
-         document.getElementById("hamburger").addEventListener("click", function(){
-             document.getElementById("m").classList.add("xavi");
-         })
-     </script>
-     </html>
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     <!DOCTYPE html>
-     <html lang="en">
-     
+
+    <section id="TOP_SERIES" class="meusServeis">
+        <h1 class="titol titol-serveis">Top series</h1>
+        <div class="series-list">
+            
+        </div>
+    </section>
+    <section id="Series" class="series">
+        <h2 class="tops">TOP</h2>
+        <p class="subtitol subtitol-treball"> Las series </p>
+        <div class="portfoli">
+            <a href="https://www.cdalcazar.org/" class="serie-obj ">
+                <img src="./img/cartel-lupin-2189837.webp" alt="" class="portfoli-img">
+
+
+            </a>
+
+
+            <a href="https://www.covadenxoroi.com/es" class="portfoli-obj">
+                <img src="./img/El_juego_del_calamar_Serie_de_TV-688981365-large.jpg" alt="" class="portfoli-img">
+            </a>
+
+
+            <a href="https://jardineriakuka.com/" class="portfoli-obj">
+                <img src="./img/la casa de papel poster web.jpg" alt="" class="portfoli-img">
+            </a>
+
+
+            <a href="https://www.artiemhotels.com/capri-mahon/" class="portfoli-obj">
+                <img src="./img/stranger-things-font..jpg" alt="" class="portfoli-img">
+            </a>
+
+
+            <a href="https://www.menorca.es/" class="portfoli-obj">
+                <img src="./img/the walkingdead poster web.jpg" alt="" class="portfoli-img">
+            </a>
 
 
 
 
-    
-</header>
+
+
+
+
+
+
+
+
+
+    </section>
+
+    <section id="Pon estrellas " class="rating-section">
+        <h2 class="rating-title">Califica tu Serie Favorita</h2>
+        <form id="ratingForm">
+            <input type="text" id="seriesName" placeholder="Nombre de la Serie" required>
+            <div class="star-rating">
+                <i class="fa fa-star" data-rating="1"></i>
+                <i class="fa fa-star" data-rating="2"></i>
+                <i class="fa fa-star" data-rating="3"></i>
+                <i class="fa fa-star" data-rating="4"></i>
+                <i class="fa fa-star" data-rating="5"></i>
+            </div>
+            <button type="submit">Enviar Calificación</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <a href="mailto:erubio20672@iesjoanramis.org" class="link">GMAIL: erubio20672@iesjoanramis.org</a>
+        <ul class="lista">
+            <li class="item-list"><a href="https://www.instagram.com/" target="_blank" class="link-list">Instagram</a></li>
+            <li class="item-list"><a href="https://github.com/mmaariiaaa" target="_blank" class="link-list">GitHub</a></li>
+            <li class="item-list"><a href="https://x.com/i/flow/login" target="_blank" class="link-list">Twitter</a></li>
+            <li class="item-list"><a href="https://www.tiktok.com/upload?lang=es" target="_blank" class="link-list">TikTok</a></li>
+        </ul>
+    </footer>
+
+    <script src="/js/app.js"></script>
+    <script src="rating.js"></script>
+</body>
+</html>
