@@ -105,7 +105,7 @@ header {
 }
 
 .series-list div {
-    background-color: var(--colorTexto);
+    background-color: var(--colorFondo);
     padding: 1.5em;
     margin: 1em 0;
     border-radius: 8px;
@@ -169,11 +169,12 @@ header {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .submit-rating:hover {
     background-color: var(--colorHover);
+    transition: background-color 0.3s ease;
+
 }
 
 
@@ -220,7 +221,7 @@ button:hover {
     transform: scale(1.05);
 }
 
-/*.hamburger{
+.hamburger{
     display: block;
     position: fixed;
     right: 1em;
@@ -270,7 +271,7 @@ button:hover {
 }
 
 
-.xavi{
+.series{
     transform: translateX(0%);
     transition: transition 250ms cubic-bezier(.5, 0, .5, 1);
 }
@@ -280,3 +281,26 @@ button:hover {
     margin-left: 880px;
    
 }
+.portfoli-obj {
+    background: var(--ColorFotos);
+    overflow: hidden;
+}
+
+
+.serie-img {
+    transition:
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+
+
+        width: 25%;
+}
+
+
+.serie-img:hover {
+    transform: scale(1.2);
+    opacity: .5;
+    animation: jello-diagonal .9s linear both
+}
+
+
