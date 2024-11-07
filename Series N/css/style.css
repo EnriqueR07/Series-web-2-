@@ -34,10 +34,6 @@ header {
     justify-content: space-between;
 }
 
-.logo img {
-    max-width: 120px;
-    height: auto;
-}
 
 .menu {
     display: flex;
@@ -142,6 +138,8 @@ header {
     color: var(--colorEstrella);
 }
 
+
+/*
 .star-rating {
     display: flex;
     justify-content: center;
@@ -176,7 +174,7 @@ header {
     transition: background-color 0.3s ease;
 
 }
-
+*/
 
 .footer {
     background-color: var(--colorPrincipal);
@@ -304,3 +302,39 @@ button:hover {
 }
 
 
+    
+    body {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: hsl(0, 0%, 0%);
+    font-family: "Poppins", sans-serif;
+    }
+
+    .star {
+    font-size: 10vh;
+    cursor: pointer;
+    }
+    
+    .one {
+    color: rgb(255, 0, 0);
+    }
+    
+    .two {
+    color: rgb(255, 106, 0);
+    }
+    
+    .three {
+    color: rgb(251, 255, 120);
+    }
+    
+    .four {
+    color: rgb(255, 255, 0);
+    }
+    
+    .five {
+    color: rgb(24, 159, 14);
+    }
+    

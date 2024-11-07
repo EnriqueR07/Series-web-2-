@@ -1,54 +1,129 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
-import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
+import { getDatabase, ref, push, onValue } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 const input = document.getElementById("inputField");
-const boto = document.getElementById("afageix");
+const boto = document.getElementById("afegir");
 const lista = document.getElementById("llista");
 
 const appSettings = {
-    databaseURL: "https://serie-nexflix-default-rtdb.europe-west1.firebasedatabase.app/"
+    databaseURL: "https://console.firebase.google.com/project/serie-nexflix/database/serie-nexflix-default-rtdb/data/~2F?hl=es-419"
 }
 
-const app = initializeApp(appSettings)
-const baseDades = getDatabase(app)
-const tasks = ref(baseDades, "tareas")
 
 
-boto.addEventListener("click", function () {
-push(tasks, input.value) 
-clearScreen()
-})
+let stars = 
+	document.getElementsByClassName("star");
+let output = 
+	document.getElementById("output");
 
-function addElement(e){
-    let elementLlista = document.createElement("li");
-    elementLlista.id = e[0]
-    elementLlista.textContent = e[1];
-    elementLlista.addEventListener("click", function () {
-        let localitzacioItem = ref(baseDades, `tareas/${e[0]}`)
-        remove(localitzacioItem)
-    })
-    lista.append(elementLlista);
 
+function gfg(n) {
+	remove();
+	for (let i = 0; i < n; i++) {
+		if (n == 1) cls = "one";
+		else if (n == 2) cls = "two";
+		else if (n == 3) cls = "three";
+		else if (n == 4) cls = "four";
+		else if (n == 5) cls = "five";
+		stars[i].className = "star " + cls;
+	}
+	output.innerText = "Rating is: " + n + "/5";
 }
 
-function clearScreen() {
-    input.value = ""
+
+function remove() {
+	let i = 0;
+	while (i < 5) {
+		stars[i].className = "star";
+		i++;
+	}
 }
 
-onValue(tasks, function (snapshot) {
-    if(snapshot.exists()) {
-    let resultats = Object.entries(snapshot.val())
-    clearList()
-    for (let i = 0; i < resultats.length; i++) {
-        let current = resultats[i]
-        addElement(resultats[i])
-    }
+import { getDatabase } from "firebase/database";
 
-}else{
-    lista.innerHTML = "No items here yet..."
-}
-})
+const database = getDatabase();
 
-function clearList(){
-    lista.innerHTML=""
-}
+
+
+import { getDatabase, ref, push, set } from "firebase/database";
+
+// Create a new post reference with an auto-generated id
+const db = getDatabase();
+const postListRef = ref(db, 'posts');
+const newPostRef = push(postListRef);
+set(newPostRef, {
+    // ...
+});
+
+
+
+
+
+import { getDatabase, ref, onChildAdded, onChildChanged, onChildRemoved } from "firebase/database";
+
+const db = getDatabase();
+const commentsRef = ref(db, 'post-comments/' + postId);
+onChildAdded(commentsRef, (data) => {
+  addCommentElement(postElement, data.key, data.val().text, data.val().author);
+});
+
+onChildChanged(commentsRef, (data) => {
+  setCommentValues(postElement, data.key, data.val().text, data.val().author);
+});
+
+onChildRemoved(commentsRef, (data) => {
+  deleteComment(postElement, data.key);
+});
+
+
+
+
+
+
+import { getDatabase, ref, onValue } from "firebase/database";
+
+const db = getDatabase();
+const dbRef = ref(db, '/a/b/c');
+
+onValue(dbRef, (snapshot) => {
+  snapshot.forEach((childSnapshot) => {
+    const childKey = childSnapshot.key;
+    const childData = childSnapshot.val();
+    // ...
+  });
+}, {
+  onlyOnce: true
+});
+
+
+
+
+
+
+import { getDatabase, ref, query, orderByChild } from "firebase/database";
+import { getAuth } from "firebase/auth";
+
+const db = getDatabase();
+const auth = getAuth();
+
+const myUserId = auth.currentUser.uid;
+const topUserPostsRef = query(ref(db, 'user-posts/' + myUserId), orderByChild('starCount'));
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+/* https://firebase.google.com/docs/database/admin/save-data?hl=es-419#java*/
+/* https://www.geeksforgeeks.org/star-rating-using-html-css-and-javascript/*/
+
