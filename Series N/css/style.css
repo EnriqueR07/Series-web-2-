@@ -72,10 +72,7 @@ header {
     margin-bottom: 0.5em;
 }
 
-.intro p {
-    font-size: 1.2em;
-    color: var(--colorTextoClaro);
-}
+
 
 .intro-img {
     max-width: 60%;
@@ -109,10 +106,6 @@ header {
     text-align: left;
 }
 
-.series-list h3 {
-    font-size: 1.5em;
-    color: var(--colorPrincipal);
-}
 
 .series-list p {
     font-size: 1.2em;
@@ -139,7 +132,7 @@ header {
 }
 
 
-/*
+
 .star-rating {
     display: flex;
     justify-content: center;
@@ -169,12 +162,9 @@ header {
     cursor: pointer;
 }
 
-.submit-rating:hover {
-    background-color: var(--colorHover);
-    transition: background-color 0.3s ease;
 
-}
-*/
+
+
 
 .footer {
     background-color: var(--colorPrincipal);
@@ -183,11 +173,7 @@ header {
     text-align: center;
 }
 
-.footer a {
-    color: var(--colorTexto);
-    text-decoration: none;
-    font-weight: bold;
-}
+
 
 .lista {
     display: flex;
@@ -219,55 +205,6 @@ button:hover {
     transform: scale(1.05);
 }
 
-.hamburger{
-    display: block;
-    position: fixed;
-    right: 1em;
-    top: 1em;
-}
-
-
-.hamburger,
-.hamburger::after,
-.hamburger::before{
-    background-color: var(--ColorFosc);
-    width: 2em;
-    height: 3px;
-    border-radius: 1em;
-    transition: transform 250ms ease-in-out;
-}
-
-
-.hamburger::before,
-.hamburger::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-
-
-.hamburger::after{
-    bottom: 8px;
-}
-
-
-.hamburger::before{
-     top: 8px;
-}
-
-
-.desplegable{
-    padding: 0.5em;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    position: absolute;
-    right: 1em;
-    top: 1em;
-    z-index: 1000;
-}
-
 
 .series{
     transform: translateX(0%);
@@ -279,10 +216,8 @@ button:hover {
     margin-left: 880px;
    
 }
-.portfoli-obj {
-    background: var(--ColorFotos);
-    overflow: hidden;
-}
+
+
 
 
 .serie-img {
@@ -302,39 +237,4 @@ button:hover {
 }
 
 
-    
-    body {
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background: hsl(0, 0%, 0%);
-    font-family: "Poppins", sans-serif;
-    }
-
-    .star {
-    font-size: 10vh;
-    cursor: pointer;
-    }
-    
-    .one {
-    color: rgb(255, 0, 0);
-    }
-    
-    .two {
-    color: rgb(255, 106, 0);
-    }
-    
-    .three {
-    color: rgb(251, 255, 120);
-    }
-    
-    .four {
-    color: rgb(255, 255, 0);
-    }
-    
-    .five {
-    color: rgb(24, 159, 14);
-    }
     

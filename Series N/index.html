@@ -31,7 +31,7 @@
         <h1 class="titol titol-intro">¿Cuál es realmente la mejor?</h1>
         <p class="subtitol subtitol-intro">Haz tu propio ranking, danos tu opinión</p>
         <img src="./img/palabra nexflix .png" alt="Netflix Word" class="intro-img">
-        <p>"Información sobre la web "</p>
+        <p>" En esta web podrás rankear y calificar las series de netflix con más visitas. "</p>
     </section>
 
 
@@ -47,75 +47,62 @@
         <div class="portfoli">
 
 
-            <a href="" class="serie-obj ">
+            <a href="https://www.netflix.com/es/title/80994082" class="serie-obj ">
                 <img src="./img/cartel-lupin-2189837.webp" alt="" class="serie-img">
 
 
             </a>
 
 
-            <a href="" class="portfoli-obj">
+            <a href="https://www.netflix.com/es/title/81615540" target="_blank" class="portfoli-obj">
                 <img src="./img/El_juego_del_calamar_Serie_de_TV-688981365-large.jpg" alt="" class="serie-img">
             </a>
 
 
-            <a href="" class="portfoli-obj">
+            <a href="https://www.netflix.com/es/title/80192098" target="_blank" class="portfoli-obj">
                 <img src="./img/la casa de papel poster web.jpg" alt="" class="serie-img">
             </a>
 
 
-            <a href="" class="portfoli-obj">
+            <a href="https://www.netflix.com/es/title/80057281" target="_blank" class="portfoli-obj">
                 <img src="./img/stranger-things-font..jpg" alt="" class="serie-img">
             </a>
 
 
-            <a href="" class="portfoli-obj">
+            <a href="https://www.netflix.com/es/title/70177057" target="_blank" class="portfoli-obj">
                 <img src="./img/the walkingdead poster web.jpg" alt="" class="serie-img">
             </a>
 
     </section>
 
-   
-    
-    <head>
-        <meta charset="utf-8" />
-        <title>Star Rating</title>
-        <meta name="viewport"
-              content="width=device-width, 
-                       initial-scale=1" />
-        <link rel="stylesheet"
-              href="styles.css" />
-    </head>
-     
-    <body>
-        <div class="card">
-            <h1>JavaScript Star Rating</h1>
-            <br />
-            <span onclick="gfg(1)"
-                  class="star">★
-            </span>
-            <span onclick="gfg(2)"
-                  class="star">★
-            </span>
-            <span onclick="gfg(3)"
-                  class="star">★
-            </span>
-            <span onclick="gfg(4)"
-                  class="star">★
-            </span>
-            <span onclick="gfg(5)"
-                  class="star">★
-            </span>
-            <h3 id="output">
-                  Rating is: 0/5
-              </h3>
+
+    <section id="TOP_SERIES" class="meusServeis">
+        <h1 class="titol titol-serveis">Top series</h1>
+        <div class="series-list">
+
+             
         </div>
-        <script src="script.js"></script>
-    </body>
+    </section>
+
+
+    <section id="PON_ESTRELLAS" class="rating-section">
+        <h2 class="rating-title">Califica tu Serie Favorita</h2>    
+        <form id="ratingForm">
+            <input type="text" id="seriesNombre" placeholder="Nombre de la Serie" required>
+            <div class="star-rating">
+                <i class="fa fa-star" data-rating="1" id="one"></i>
+                <i class="fa fa-star" data-rating="2" id="two"></i>
+                <i class="fa fa-star" data-rating="3" id="three"></i>
+                <i class="fa fa-star" data-rating="4" id="four"></i>
+                <i class="fa fa-star" data-rating="5" id="five"></i>
+            </div>
+            <button id="button" type="submit">Enviar Calificación </button>
+        </form>
+    </section>
+
+
+ 
      
-    
-    
-    
 
     <footer class="footer">
         <a href="mailto:erubio20672@iesjoanramis.org" class="link">GMAIL: erubio20672@iesjoanramis.org</a>
@@ -129,18 +116,16 @@
 
     
 
+  
+        
+
 
 </body>
 <script type="module" src="./js/script.js"></script>
-</script>
 
-    <script>
-        document.getElementById("hamburger").addEventListener("click", function(){
-            document.getElementById(" m ").classList.add(" x ");
-        })
-    </script>
-</body>
- 
+
+
+<script type="module" src="firebase-firestore.js"></script>
 
 
 </html>
