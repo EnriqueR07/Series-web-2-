@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/b38a2b03da.js" crossorigin="anonymous"></script>
     
-    *1<script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js"></script>
 </head>
 <body>
@@ -76,10 +76,7 @@
     </section>
 
 
-    <section id="TOP_SERIES" class="meusServeis">
-        <h1 class="titol titol-serveis">Top series</h1>
-        <div class="series-list">
-
+  
              
         </div>
     </section>
@@ -91,20 +88,19 @@
     <section id="PON_ESTRELLAS" class="ranking">
         <h2 class="ranking-title">Califica tu Serie Favorita</h2>    
         <form id="ratingForm">
-            <h3>The Walking Dead</h3>
-            <input type="text" id="seriesNombre" placeholder="Nombre de la Serie" required>
-            <div class="numero-ranking">
-            <boton id="boton">Enviar Calificación </boton>
+            <label for="inputFieldNom">Nom:</label>
+            <input type="text" id="inputFieldNom">
+            <input type="text" id="foto">
+            <input type="number" id="inputField">
+            <button id="afageix" class="boto">ADD!</button>
+            <ul id="number"></ul>
 
 
+        </div>
+        </div>
+       
 
-            <h4> Stanger Things</h4>
-            <input type="text" id="seriesNombre" placeholder="Nombre de la Serie" required>
-            <div class="numero-ranking">
-            <boton id="boton">Enviar Calificación </boton>
-        </form>
-    </div>
-
+        
     </section>
 
 

@@ -238,3 +238,42 @@ button:hover {
 
 
     
+
+
+
+.serie1{
+    color: var(--colorTextoClaro);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.serie2{
+    color: var(--colorTextoClaro);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.serie3{
+    color: var(--colorTextoClaro);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.serie4{
+    color: var(--colorTextoClaro);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.serie5{
+    color: var(--colorTextoClaro);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}

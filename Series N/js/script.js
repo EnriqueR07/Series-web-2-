@@ -8,20 +8,42 @@ const appSettings = {
 
 const app = initializeApp(appSettings);
 const baseDades = getDatabase(app);
-const ranking = ref(baseDades, "boton");
+const ranking = ref(baseDades, "Series");
  
 
 
 
-let button = document.getElementById('boton');
+let button = document.getElementById('afageix');
 
-boton.addEventListener("click", function (e) {
-    e.preventDefault();
-    let seriesNombre = document.getElementById('seriesNombre').value; 
-    push(ranking, seriesNombre); 
-    clearScreen(); 
-});
 
+
+function addElement() {
+    let elementLista = document.createElement("li"); 
+    elementLista.id = e[0]; 
+    elementLista.textContent = e[1]; 
+    elementLista.addEventListener("click", function() {
+        let localitzacioItem = ref(baseDades, `Series/${e[0]}`); 
+        remove(localitzacioItem); 
+    });
+    document.getElementById('ranking').append(elementLista); 
+}
+
+function clearList() {
+    document.getElementById('ranking').innerHTML = ""; 
+}
+
+function clearScreen() {
+    document.getElementById('ranking').value = ""; 
+}
+
+
+let b = document.getElementById("afageix")
+b.addEventListener("click",subir)
+
+
+document.getElementById("afageix").addEventListener("click",function(){
+    
+})
 
 
 
@@ -38,37 +60,6 @@ onValue(ranking, function (snapshot) {
         lista.innerHTML = "No items here yet...";
     }
 });
-
-function addElement() {
-    let elementLista = document.createElement("li"); 
-    elementLista.id = e[0]; 
-    elementLista.textContent = e[1]; 
-    elementLista.addEventListener("click", function() {
-        let localitzacioItem = ref(baseDades, `Series/${e[0]}`); 
-        remove(localitzacioItem); 
-    });
-    document.getElementById('series-list').append(elementLista); 
-}
-
-function clearList() {
-    document.getElementById('series-list').innerHTML = ""; 
-}
-
-function clearScreen() {
-    document.getElementById('seriesNombre').value = ""; 
-}
-
-
-let b = document.getElementById("enviar")
-b.addEventListener("click",subir)
-
-
-function subir(){
-    push()
-}
-
-
-
 
 
 
