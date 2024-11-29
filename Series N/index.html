@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <script src="https://kit.fontawesome.com/b38a2b03da.js" crossorigin="anonymous"></script>
     
-    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js"></script>
 </head>
 <body>
     <header>
@@ -34,80 +34,44 @@
         <p>" En esta web podrás rankear y calificar las series de netflix con más visitas. "</p>
     </section>
 
-
     <section id="TOP_SERIES" class="meusServeis">
         <h1 class="titol-servei">Top Series</h1>
-        <div class="series-list">
-            
-        </div>
+        <div class="series-list"></div>
     </section>
+
     <section id="Series" class="series">
         <h2 class="tops"></h2>
         <p class="subtitol subtitol-treball"> Las series más vistas ... ( más info.) </p>
         <div class="portfoli">
-
-
-            <a href="https://www.netflix.com/es/title/80994082" class="serie-obj ">
+            <a href="https://www.netflix.com/es/title/80994082" class="serie-obj">
                 <img src="./img/cartel-lupin-2189837.webp" alt="" class="serie-img">
-
-
             </a>
-
-
             <a href="https://www.netflix.com/es/title/81615540" target="_blank" class="portfoli-obj">
                 <img src="./img/El_juego_del_calamar_Serie_de_TV-688981365-large.jpg" alt="" class="serie-img">
             </a>
-
-
             <a href="https://www.netflix.com/es/title/80192098" target="_blank" class="portfoli-obj">
                 <img src="./img/la casa de papel poster web.jpg" alt="" class="serie-img">
             </a>
-
-
             <a href="https://www.netflix.com/es/title/80057281" target="_blank" class="portfoli-obj">
                 <img src="./img/stranger-things-font..jpg" alt="" class="serie-img">
             </a>
-
-
-
             <a href="https://www.netflix.com/es/title/70177057" target="_blank" class="portfoli-obj">
                 <img src="./img/the walkingdead poster web.jpg" alt="" class="serie-img">
             </a>
-
-    </section>
-
-
-  
-             
         </div>
     </section>
 
-
-
-
-    
     <section id="PON_ESTRELLAS" class="ranking">
         <h2 class="ranking-title">Califica tu Serie Favorita</h2>    
         <form id="ratingForm">
             <label for="inputFieldNom">Nombre:</label>
-            <input type="text" id="inputFieldNom" c>
-            <input type="ur" id="url">
+            <input type="text" id="inputFieldNom" >
             <input type="number" id="inputField">
+            <input type="url" id="url" >
             <button id="afageix" class="boto">ADD!</button>
             <ul id="number"></ul>
-
-
-
-        </div>
-        </div>
-       
-
-        
+        </form>
     </section>
-
-
- 
-     
 
     <footer class="footer">
         <a href="mailto:erubio20672@iesjoanramis.org" class="link">GMAIL: erubio20672@iesjoanramis.org</a>
@@ -119,16 +83,6 @@
         </ul>
     </footer>
 
-    
-    
-        
-
-
+    <script type="module" src="./js/script.js"></script>
 </body>
-<script type="module" src="./js/script.js"></script>
-
-
-
-
-
 </html>
